@@ -50,7 +50,7 @@ class PredictSentiment(Resource):
 
 # Setup the Api resource routing here
 # Route the URL to the resource
-api.add_resource(PredictSentiment, '/predict')
+api.add_resource(PredictSentiment, '/')
 
 
 if __name__ == '__main__':

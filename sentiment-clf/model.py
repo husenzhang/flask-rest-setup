@@ -1,11 +1,6 @@
-# ML imports
 from sklearn.naive_bayes import MultinomialNB
-# from sklearn.naive_bayes import BernoulliNB
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-# from sklearn.ensemble import RandomForestClassifier
 import pickle
-
 from util import plot_roc
 # spacy_tok
 
@@ -65,7 +60,7 @@ class NLPModel(object):
             pickle.dump(self.clf, f)
             print("Pickled classifier at {}".format(path))
 
-    def plot_roc(self, X, y, size_x, size_y):
+    def plot_roc(self, X, y):
         """Plot the ROC curve for X_test and y_test.
         """
-        plot_roc(self.clf, X, y, size_x, size_y)
+        plot_roc(self.clf, X, y)
