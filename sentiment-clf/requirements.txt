@@ -1,4 +1,6 @@
 #chalice
+flask
+flask-restful
 matplotlib
 sklearn
 numpy
