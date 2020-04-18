@@ -6,5 +6,4 @@ Notes on Flask REST API and tutorial
 ___
 
 ## Setup
-
-- [x] `pip install flask-restful`
+pip install -r requirements.txt
